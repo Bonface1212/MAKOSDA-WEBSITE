@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Give — Central Church</title>
+  <link href="assets/css/styles.css" rel="stylesheet" />
+</head>
+<body>
+  <header class="header">
+    <div class="container navbar">
+      <a class="brand" href="index.html" aria-label="Home">
+        <img src="assets/img/logo.svg" alt="Site logo" width="120" height="30"/>
+        <span>Central Church</span>
+      </a>
+      <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="siteNav">☰ Menu</button>
+      <nav id="siteNav" class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="ministries.html">Ministries</a>
+        <a href="sermons.html">Sermons</a>
+        <a href="events.html">Events</a>
+        <a href="live.html">Live</a>
+        <a href="news.html">News</a>
+        <a href="give.html">Give</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <span class="kicker">Giving</span>
+      <h1>Support the mission</h1>
+      <p class="lead">Link to your payment gateway or display bank/M-Pesa details.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container grid" style="grid-template-columns: 1.2fr 1.2fr;">
+      <div class="card">
+        <h3>M-Pesa</h3>
+        <p class="muted">Paybill: 123456 • Account: CHURCH</p>
+      </div>
+      <div class="card">
+        <h3>Bank Transfer</h3>
+        <p class="muted">Bank, Branch, Account Name, Number</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container cols">
+      <div>
+        <img src="assets/img/logo.svg" alt="Site logo" width="140" height="35"/>
+        <p class="muted" style="margin-top:10px">A clean, modern church website starter. Replace this text with your own content.</p>
+      </div>
+      <div>
+        <h3 style="font-size:1rem;margin-bottom:8px">Quick Links</h3>
+        <div class="nav" style="padding-top:8px">
+          <a href="about.html">About</a>
+          <a href="ministries.html">Ministries</a>
+          <a href="sermons.html">Sermons</a>
+          <a href="events.html">Events</a>
+          <a href="news.html">News</a>
+        </div>
+      </div>
+      <div>
+        <h3 style="font-size:1rem;margin-bottom:8px">Visit Us</h3>
+        <p class="muted">Jakaya Kikwete Rd, Nairobi — (Replace with your address)</p>
+        <p class="muted">Phone: +254 700 000000</p>
+        <p class="muted">Email: info@example.org</p>
+      </div>
+      <div>
+        <h3 style="font-size:1rem;margin-bottom:8px">Schedule</h3>
+        <p class="muted">Sabbath School: 9:00am</p>
+        <p class="muted">Divine Service: 11:00am</p>
+        <p class="muted">Afternoon: 2:30pm</p>
+      </div>
+    </div>
+    <div class="copy">
+      <div class="container">© <span id="year"></span> Central Church. Built with HTML, CSS & JS.</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
