@@ -5,118 +5,207 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MAKONGENI SEVENTH-DAY ADVENTIST CHURCH — Home</title>
   <link href="assets/css/styles.css" rel="stylesheet" />
+
 </head>
 <body>
   <header class="header">
     <div class="container navbar">
       <a class="brand" href="index.html" aria-label="Home">
-        <img src="assets/images/sda.svg" alt="Site logo" width="140" height="100"/>
+        <img src="assets/images/sda.svg" alt="Sda logo" width="140" height="100"/>
         <span>MAKONGENI SEVENTH-DAY ADVENTIST CHURCH</span>
       </a>
-      <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="siteNav">☰ Menu</button>
+      <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="siteNav">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
       <nav id="siteNav" class="nav" aria-label="Primary">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="ministries.html">Ministries</a>
         <a href="sermons.html">Sermons</a>
         <a href="events.html">Events</a>
-        <a href="live.html">Live</a>
+        <a href="live.html" style="color: red; font-weight: 700;">Live</a>
         <a href="news.html">News</a>
         <a href="give.html">Give</a>
         <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
+  <a href="index.html" class="bar-logo-link">
+     <img src="assets/images/sda2.svg" alt="SDA Logo" class="bar-logo">
+  </a>
 
   <section class="hero">
     <div class="container">
       <span class="kicker">Welcome</span>
       <h1>Join us for worship every Sabbath</h1>
-      <p class="lead">This starter mirrors a modern church layout: hero, featured sermon, events, news, and calls to action.</p>
+      <p class="lead">Exodus 20:8 Remember the Sabbath day by keeping it holy.</p>
       <div class="cta">
         <a class="btn primary" href="live.html">Watch Live</a>
         <a class="btn outline" href="give.html">Give</a>
       </div>
     </div>
   </section>
+<!-- ===== Image Slider Section ===== -->
+<section class="slider-section">
+  <div class="slider-container">
+    <div class="slide fade">
+      <img src="assets/images/church.jpg" alt="Church">
+    </div>
+    <div class="slide fade">
+      <img src="assets/images/chaplain 2.jpg" alt="Chaplains">
+    </div>
+    <div class="slide fade">
+      <img src="assets/images/band 1.JPG" alt="pathfinders">
+    </div>
+    <div class="slide fade">
+      <img src="assets/images/crusade.jpg" alt="crusade">
+    </div>
+      <div class="slide fade">
+      <img src="assets/images/youth 1.JPG" alt="youth 1">
+    </div>
+      <div class="slide fade">
+      <img src="assets/images/chaplain 1.jpg" alt="chaplain 1">
+    </div>
+      <div class="slide fade">
+      <img src="assets/images/youth 2.JPG" alt="youth 2">
+    </div>
+      <div class="slide fade">
+      <img src="assets/images/youth 3.JPG" alt="youth 3">
+    </div>
+          <div class="slide fade">
+      <img src="assets/images/choir 1.JPG" alt="choir 1">
+    </div>
+          <div class="slide fade">
+      <img src="assets/images/choir 2.JPG" alt="choir 2">
+    </div>
+          <div class="slide fade">
+      <img src="assets/images/choir 3.JPG" alt="choir 3">
+    </div>
 
-  <section class="section">
-    <div class="container">
-      <h2>Featured Sermon</h2>
-      <div class="card" role="region" aria-labelledby="featured-sermon">
-        <div class="grid" style="grid-template-columns: 1.3fr 2fr; gap: 20px;">
-          <div>
-            <div style="aspect-ratio: 16/9; background:#e5e7eb; border-radius:12px; display:flex; align-items:center; justify-content:center;">Video Placeholder</div>
-          </div>
-          <div>
-            <span class="badge">New</span>
-            <h3 id="featured-sermon" style="margin-top:6px">A Hope That Endures</h3>
-            <p class="muted">Speaker: Pr. Jane Doe • Aug 24, 2025</p>
-            <p class="lead" style="margin-top:8px">Replace this with your own sermon summary. You can link to YouTube or an on-site video.</p>
-            <div style="margin-top:10px; display:flex; gap:10px;">
-              <a href="sermons.html" class="btn primary">More Sermons</a>
-              <a href="#" class="btn">Download Notes</a>
-            </div>
+    <!-- Prev/Next controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <!-- Dots navigation -->
+  <div class="dots">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+    <span class="dot" onclick="currentSlide(9)"></span>
+    <span class="dot" onclick="currentSlide(10)"></span>
+    <span class="dot" onclick="currentSlide(11)"></span>
+    
+  </div>
+</section>
+
+ <section class="section">
+  <div class="container">
+    <h2>Featured Sermon</h2>
+    <div class="card" role="region" aria-labelledby="featured-sermon">
+      <div class="grid" style="grid-template-columns: 1.3fr 2fr; gap: 20px;">
+        
+        <!-- 🎥 Embedded YouTube Video -->
+      <div>
+  <div style="aspect-ratio:16/9; border-radius:12px; overflow:hidden;">
+    <iframe width="100%" height="100%" 
+      src="https://www.youtube.com/embed/f-nITTy13HM" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+
+        <!-- 📖 Sermon Details -->
+        <div>
+          <span class="badge">New</span>
+          <h3 id="featured-sermon" style="margin-top:6px">CAMP MEETING 2025</h3>
+          <p class="muted">Speaker: Pr. Pius Lukiko • Aug 16, 2025</p>
+          <p class="lead" style="margin-top:8px">
+            2 Samuel 11:1-12. Topic: The danger of Negligence in the midst of the Great Controversy.
+          </p>
+          <div style="margin-top:10px; display:flex; gap:10px;">
+            <a href="sermons.html" class="btn primary">More Sermons</a>
+            <a href="#" class="btn">Download Notes</a>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <section class="section" style="background:#fff">
-    <div class="container">
-      <h2>Upcoming Events</h2>
-      <div class="grid cards">
-        <article class="card">
-          <h3>Prayer & Fasting Sabbath</h3>
-          <p class="meta">Sat, Sep 6 • Sanctuary</p>
-          <p>Join the church family in prayer. Add details here.</p>
-        </article>
-        <article class="card">
-          <h3>AY Program</h3>
-          <p class="meta">Sat, Sep 13 • 2:30pm</p>
-          <p>An afternoon of study and youth-led worship.</p>
-        </article>
-        <article class="card">
-          <h3>Midweek Vespers</h3>
-          <p class="meta">Wed, 6:00pm • Online</p>
-          <p>Midweek devotion and fellowship on our livestream.</p>
-        </article>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="section">
-    <div class="container">
-      <h2>Latest News</h2>
-      <div class="grid cards">
-        <article class="card">
-          <h3>Church Renovation Update</h3>
-          <p class="meta">Aug 15, 2025</p>
-          <p>Share a recent update or highlight for your community.</p>
-          <a class="btn" href="news.html" style="margin-top:8px">Read More</a>
-        </article>
-        <article class="card">
-          <h3>Community Outreach</h3>
-          <p class="meta">Aug 8, 2025</p>
-          <p>Summarize a recent outreach activity and how to join.</p>
-          <a class="btn" href="news.html" style="margin-top:8px">Read More</a>
-        </article>
-        <article class="card">
-          <h3>Choir Auditions</h3>
-          <p class="meta">Aug 1, 2025</p>
-          <p>Invite members to participate. Provide contact info.</p>
-          <a class="btn" href="news.html" style="margin-top:8px">Read More</a>
-        </article>
-      </div>
+
+<!-- Upcoming Events -->
+<section class="section" style="background:#fff">
+  <div class="container">
+    <h2>Upcoming Events</h2>
+    <div class="grid cards">
+      <article class="card">
+        <h3>Prayer & Fasting Sabbath</h3>
+        <p class="meta">Sat, Sep 6 • Sanctuary</p>
+        <p>Join the church family in prayer. Come Prepared.</p>
+      </article>
+      <article class="card">
+        <h3>AY Program</h3>
+        <p class="meta">Sat, Sep 13 • 2:30pm</p>
+        <p>An afternoon of study and youth-led worship.</p>
+      </article>
+      <article class="card">
+        <h3>Midweek Vespers</h3>
+        <p class="meta">Wed, 6:00pm • Online</p>
+        <p>Midweek devotion and fellowship on our livestream.</p>
+      </article>
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- Latest News -->
+<section class="section">
+  <div class="container">
+    <h2>Latest News</h2>
+    <div class="grid cards">
+      <article class="card">
+        <h3>Church Building Update</h3>
+        <p class="meta">Aug 15, 2025</p>
+        <p>Lets continue giving towards church building using our Paybill.</p>
+        <a class="btn" href="news.html">Read More</a>
+      </article>
+      <article class="card">
+        <h3>Community Outreach</h3>
+        <p class="meta">Aug 8, 2025</p>
+        <p>We as a Church we are planning to have an outreach within our estate, Lets continue to prepare.</p>
+        <a class="btn" href="news.html">Read More</a>
+      </article>
+      <article class="card">
+        <h3>Choir Auditions</h3>
+        <p class="meta">Aug 1, 2025</p>
+        <p>Choir Leadership is asking any member willing to join the choir to come for Auditions this 4th Quarter.
+          <h4>Contact Choir Director for more info.</h4>
+        </p>
+        <a class="btn" href="news.html">Read More</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+
 
   <footer class="footer">
     <div class="container cols">
       <div>
-        <img src="assets/img/logo.svg" alt="Site logo" width="140" height="35"/>
-        <p class="muted" style="margin-top:10px">A clean, modern church website starter. Replace this text with your own content.</p>
+        <img src="assets/images/sda.svg" alt="Sda logo" width="140" height="100"/>
+        <p class="muted" style="margin-top:10px">An official website of the Makongeni Seventh-day Adventist Church.</p>
       </div>
       <div>
         <h3 style="font-size:1rem;margin-bottom:8px">Quick Links</h3>
@@ -143,11 +232,13 @@
       </div>
     </div>
     <div class="copy">
-      <div class="container">© <span id="year"></span> Central Church. Built with HTML, CSS & JS.</div>
+      <div class="container">© <span id="year"></span> Makongeni Seventh-Day Adventist Church.</div>
     </div>
   </footer>
 
   <script src="assets/js/main.js"></script>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  
 </body>
 </html>
+
+
